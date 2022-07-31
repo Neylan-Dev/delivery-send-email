@@ -14,7 +14,7 @@ public class RabbitMQRoute extends RouteBuilder {
     public void configure() {
 
         from("{{from.delivery.email}}")
-                .routeId(Constants.DIRECT_SEND_EMAIL)
+                .id(Constants.DIRECT_SEND_EMAIL)
                 .unmarshal()
                 .json(JsonLibrary.Jackson, DeliveryEmailDto.class)
                 .bean(DeliverySendEmailService.class);

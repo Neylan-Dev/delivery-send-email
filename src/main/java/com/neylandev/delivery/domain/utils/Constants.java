@@ -6,4 +6,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Constants {
 
+    public static final String DIRECT_SEND_EMAIL = "direct:send-email";
+
 }
